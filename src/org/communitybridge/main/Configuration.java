@@ -1538,6 +1538,11 @@ public class Configuration
 			return false;
 		}
 
+		if (simpleSynchronizationSuperUserID.matches("ignore")) {
+			log.warning("The super-user's user ID check is disabled. This is not recommended!");
+			return true;
+		}
+		
 		try
 		{
 			ResultSet result = sql.sqlQuery(query);

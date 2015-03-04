@@ -466,7 +466,10 @@ simple-synchronization:
   # synchronized from Minecraft to the web application, that is, the
   # synchronization for this user will be as if direction was set to
   # 'web' (see above). Be absolutely sure this user-id is your super-user
-  # all-access administrative account.
+  # all-access administrative account. Type 'ignore' to disable this feature
+  # disabling this is _not_ recommended and really dangerous. Don't do it if
+  # you are not absolutely sure what are you doing and have access to database
+  # and knowledge to fix it by hand.
   super-user-user-id: ''
 
   # If you're using primary group synchronization and a permissions system that
